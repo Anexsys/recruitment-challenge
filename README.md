@@ -4,6 +4,7 @@
 
 - Clone the repository
 - Implement the methods in the PairsGame class
+- Implement tests in the PairsGameTests class
 - Push the implemented version to your own copy of the repository
 - Submit the link to your repository via your contact at Anexsys
 
