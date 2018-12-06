@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace CSharp
 {
-    class Suit
+    enum Suit
     {
+        CLUBS,
+        DIAMNODS,
+        HEARTS,
+        SPADES,
     }
 }

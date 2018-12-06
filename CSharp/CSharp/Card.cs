@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace CSharp
 {
-    class Card
+     class Card
     {
-        public Suit Suit { get; }
-        public Rank Rank { get; }
+        public Suit? Suit { get; }
+        public Rank? Rank { get; }
         public string DeckId { get; }
 
-        Card(Suit suit, Rank rank, String deckId)
+        public Card(Suit? suit, Rank? rank, String deckId)
         {
             Suit = suit;
             Rank = rank;

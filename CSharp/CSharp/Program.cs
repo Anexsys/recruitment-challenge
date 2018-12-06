@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace CSharp
@@ -10,12 +11,26 @@ namespace CSharp
     {
         static void Main(string[] args)
         {
-            // The code provided will print ‘Hello World’ to the console.
-            // Press Ctrl+F5 (or go to Debug > Start Without Debugging) to run your app.
-            Console.WriteLine("Hello World!");
-            Console.ReadKey();
 
-            // Go to http://aka.ms/dotnet-get-started-console to continue learning how to build a console app! 
+            Task task = PrintWinner();
+
+            while (!task.IsCompleted)
+            {
+                Console.WriteLine("Running the game");
+                Thread.Sleep(1000);
+            }
+        }
+
+
+        static async Task PrintWinner()
+        {
+            Player player = await new PairsGame().Assign(new Player[]
+            {
+            new Player("A"),
+            new Player("B")
+             }).Shuffle().Deal().Start();
+
+            Console.WriteLine(player.ToString());
         }
     }
 }
