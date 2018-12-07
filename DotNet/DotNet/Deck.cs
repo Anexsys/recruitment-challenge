@@ -9,7 +9,7 @@ namespace DotNet
         private static readonly int NUM_STANDARD_CARDS = NUM_RANKS * NUM_SUITS;
         private readonly string id;
 
-        public Card[] cards { get; }
+        public Card[] Cards { get; }
 
 
         public Deck(int numJokers)
@@ -20,19 +20,19 @@ namespace DotNet
             }
 
             id = $"deck-{DateTime.Now.Ticks} - {new Random().NextDouble().ToString().Substring(0, 10)}";
-            cards = new Card[NUM_STANDARD_CARDS + numJokers];
+            Cards = new Card[NUM_STANDARD_CARDS + numJokers];
 
             for (int i = 0; i < NUM_SUITS; i++)
             {
                 for (int j = 0; j < NUM_RANKS; j++)
                 {
-                    cards[(i * NUM_RANKS) + j] = new Card((Suit)i, (Rank)j, id);
+                    Cards[(i * NUM_RANKS) + j] = new Card((Suit)i, (Rank)j, id);
                 }
             }
 
             for (int k = NUM_STANDARD_CARDS; k < NUM_STANDARD_CARDS + numJokers; k++)
             {
-                cards[k] = new Joker(id);
+                Cards[k] = new Joker(id);
             }
         }
 
@@ -41,7 +41,7 @@ namespace DotNet
         public Deck(string id, Card[] cards)
         {
             this.id = id;
-            this.cards = cards;
+            this.Cards = cards;
         }
     }
 }

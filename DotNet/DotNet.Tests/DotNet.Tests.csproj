@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3C4F7BA1-7917-49E6-BB36-40777107ACE8}</ProjectGuid>
+    <ProjectGuid>{6D2DCBEA-654A-4F41-82E8-3FEDBB2AB7D0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DotNet.Tests</RootNamespace>
@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CardTest.cs" />
+    <Compile Include="PairsGameTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -57,7 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DotNet\DotNet.csproj">
-      <Project>{acfd230b-7dab-4370-995d-9671972fafb5}</Project>
+      <Project>{ec99a5ee-e78e-4887-9b6c-b2a2ca901442}</Project>
       <Name>DotNet</Name>
     </ProjectReference>
   </ItemGroup>
