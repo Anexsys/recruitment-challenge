@@ -1,6 +1,6 @@
-﻿namespace CSharp
+﻿namespace DotNet
 {
-    enum Rank
+    public enum Rank
     {
         ACE,
         TWO,

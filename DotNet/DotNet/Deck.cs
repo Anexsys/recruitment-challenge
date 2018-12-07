@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace CSharp
+namespace DotNet
 {
-    class Deck
+    public class Deck
     {
         private static readonly int NUM_SUITS = Enum.GetNames(typeof(Suit)).Length;
         private static readonly int NUM_RANKS = Enum.GetNames(typeof(Rank)).Length;

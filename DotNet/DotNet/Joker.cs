@@ -1,6 +1,6 @@
-﻿namespace CSharp
+﻿namespace DotNet
 {
-    class Joker : Card
+    public class Joker : Card
     {
         public Joker(string deckId) : base(null, null, deckId) { }
 

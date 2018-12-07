@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace CSharp
+namespace DotNet
 {
-    class Player
+    public class Player
     {
         private readonly string id;
         private readonly ISet<Card> currentCards;

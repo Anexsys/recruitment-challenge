@@ -1,15 +1,13 @@
 ﻿using System.Threading.Tasks;
 
-namespace CSharp
+namespace DotNet
 {
-    interface Game
+    public interface Game
     {
         Game Shuffle();
         Game Assign(Player[] players);
         Game Deal();
-
         Task<Player> Start();
-
         Task<Player> Winner();
     }
 }

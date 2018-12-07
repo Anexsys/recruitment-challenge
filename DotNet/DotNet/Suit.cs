@@ -1,6 +1,6 @@
-﻿namespace CSharp
+﻿namespace DotNet
 {
-    enum Suit
+    public enum Suit
     {
         CLUBS,
         DIAMNODS,

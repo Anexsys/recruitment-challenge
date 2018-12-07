@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace CSharp
+namespace DotNet
 {
-    class Card
+    public class Card
     {
         public Suit? Suit { get; }
         public Rank? Rank { get; }
